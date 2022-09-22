@@ -1,6 +1,6 @@
 FROM node
 WORKDIR /app
 ADD . /app
-RUN npm install --package-lock-only
+RUN npx npm@6 ci
 EXPOSE 3000
 CMD npm start
